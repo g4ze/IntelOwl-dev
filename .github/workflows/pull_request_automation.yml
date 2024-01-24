@@ -3,7 +3,7 @@ name: Build & Tests
 
 on:
   schedule:
-    -cron: '15 * * * *'
+    -cron: '1 * * * *'
 jobs:
   detect-changes:
     name: Detect changes
