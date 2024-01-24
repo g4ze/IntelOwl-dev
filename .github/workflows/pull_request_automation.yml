@@ -2,13 +2,8 @@ permissions: read-all
 name: Build & Tests
 
 on:
-  pull_request:
-    branches: [master, develop]
-    paths-ignore:
-      - "**.md"
-      - "docs/**"
-      - "integrations/**"
-
+  schedule:
+    -cron: '15 * * * *'
 jobs:
   detect-changes:
     name: Detect changes
