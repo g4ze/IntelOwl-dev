@@ -2,8 +2,7 @@ permissions: read-all
 name: Build & Tests
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  
 jobs:
   detect-changes:
     name: Detect changes
